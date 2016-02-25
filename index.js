@@ -10,7 +10,7 @@ var server = http_Module.createServer();
 //every time a request is received by the server .. a request event is generated 
 server.on("request",function(req, res){
 	res.writeHead(200,{"Content-type":"text/plain"});
-	res.end("Just received a request.....");
+	console.log("Just received a request....."+request);
 })
 
 //Creating a server is not enough ... developer needs to tell the server on which port should it listen.
